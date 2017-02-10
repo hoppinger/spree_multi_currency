@@ -1,5 +1,5 @@
 <!-- insert_bottom 'ul[data-hook="admin_product_tabs"]' -->
 <li<%== ' class="active"' if current == 'Prices' %>>
   <% title = Spree.t(:prices) %>
-  <%= link_to_with_icon 'money', title, admin_product_prices_path(@product), title: title %>
+  <%= link_to_with_icon 'money', title, spree.admin_product_prices_path(@product), title: title %>
 </li>
